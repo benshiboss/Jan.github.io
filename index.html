@@ -1,3 +1,672 @@
-<html>
-  这是我的第一个中文网站
-  </html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>本势数智零售商业计划书</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="a25165fb-a50f-4d3a-b0b7-ac1277c2eac6" class="page sans"><header><h1 class="page-title">本势数智零售商业计划书</h1></header><div class="page-body"><h1 id="bdf90a60-20a5-418a-81fe-1e4dffad19b6" class="">一、公司简介</h1><ul id="d5276d79-9606-40a8-b5d1-b8734329954c" class="toggle"><li><details open=""><summary>公司的背景和业务</summary><ul id="b7c1cc8c-bfac-40af-a17e-210a760953ec" class="toggle"><li><details open=""><summary>本势品牌管理（广东）有限公司专注于新消费市场的品牌管理运营服务，聚焦新媒体、新渠道和新零售领域，为企业提供技术支持、系统研发和全域营销解决方案等服务型平台公司。本势集团提供包括SaaS商城系统、团购平台、RPA机器人流程自动化发单软件、直播优惠券导购系统和ChatGPT企微版等效率工具和系统服务。</summary><p id="624bf73e-446d-4302-9824-bb83f9afd173" class="">业务：品牌咨询、品牌诊断、品牌全案、视觉营销、数智营销、系统研发、私域运营、全域运营、百货零售等</p></details></li></ul><p id="01af1c44-7b52-48a2-8d4e-3765ab0b9cbc" class="">
+</p><ul id="f7c6ea0f-ff19-44b1-9f55-beda7c5d87b1" class="toggle"><li><details open=""><summary>公司的使命和愿景</summary><p id="f9935e25-6ac7-4172-bd52-688b7995d3c0" class="">使命：为企业提供适时有效的品牌营销服务，创造更广泛的价值。</p><p id="f9e70be1-ad0e-4b5e-b23f-c339060cd772" class="">愿景：成为数字化营销服务领导者，为客户创造持续增长价值。</p><p id="553ec11f-b60e-48b7-9036-309a79e06255" class="">价值观：诚信本分、互惠共赢、务实创新，行动结果。</p></details></li></ul><p id="76f46266-1d0b-4654-8368-06e1941ca1a0" class="">
+</p><ul id="873bfe99-6466-4d40-b35a-dcb968b3afdf" class="toggle"><li><details open=""><summary>公司的管理团队和组织结构</summary><ul id="b9f557f8-4739-4e66-989c-d628c09b1a28" class="toggle"><li><details open=""><summary>管理团队</summary><ul id="c7c7b2ea-8dfb-43c1-9cf2-22d6ff7122ff" class="bulleted-list"><li style="list-style-type:disc">朱建（创始人兼产品经理）：<p id="32fdcde9-cece-422a-b9d7-14ba0154143a" class="">移动互联网连续创业者</p><p id="46b10f39-6b63-4077-bb6e-726f17356f90" class="">全国首家直播电商APP“人人咖”联合创始人</p><p id="b3becbd9-c954-49ce-93c6-6027cad35dff" class="">Java软件工程师</p><p id="18e71c69-8461-4b18-97c4-163bdeec6e5a" class="">平面设计师</p><p id="1de6acd8-2944-4982-9c77-8067298d7ac2" class="">巨量引擎营销师</p><p id="b5e3a84d-6b61-4bb7-bfcb-5ab24c6bf057" class="">磁力金牛营销师</p></li></ul><ul id="552a0190-33a2-47ae-8b9b-20a41b73bd83" class="bulleted-list"><li style="list-style-type:disc">小天（私域运营总监）：<p id="fe1b9411-0899-4754-be19-4175d1f364cf" class="">9个月百万级私域流量</p><p id="4c810b2b-d8f3-45aa-8c27-81d3de5bfde5" class="">“社群世界”创始人</p><p id="031fe9a3-ef87-4192-94f6-066277601f48" class="">平面设计师</p><p id="8e5ca1b8-dd34-47e4-8e6d-c8e340ce2bb6" class="">视频剪辑师</p></li></ul><ul id="66ef2a27-802d-46f4-b870-017b4f45ec27" class="bulleted-list"><li style="list-style-type:disc">郭靖（品牌总监）： 资深品牌策划师 地产金融从业十余年 知名地产分析师 商学院金牌讲师 广告营销师</li></ul></details></li></ul><ul id="c8b07881-1e42-4c87-b966-930178a84542" class="toggle"><li><details open=""><summary>组织架构</summary><figure id="47f5477a-0792-478b-9621-1dbecc871a9b" class="image"><a href="%25E7%25BB%2584%25E7%25BB%2587%25E7%25BB%2593%25E6%259E%2584%25E5%259B%25BE.png"><img style="width:1086px" src="%25E7%25BB%2584%25E7%25BB%2587%25E7%25BB%2593%25E6%259E%2584%25E5%259B%25BE.png"/></a></figure></details></li></ul></details></li></ul></details></li></ul><h2 id="d3b24531-658f-4b8f-86f7-b866a4b62ba2" class="">二、产品和服务</h2><ul id="8263661d-7131-432a-b9f2-8bfe00317489" class="toggle"><li><details open=""><summary>产品和/或服务的详细描述</summary><p id="90bfffbf-2b86-4a7d-af85-31d540f1f253" class="">随着互联网和移动互联网的快速发展，新媒体平台成为企业宣传和营销的重要渠道。</p><ul id="0c1b9bb2-6fdc-4a5b-960c-8a99d03cde55" class="toggle"><li><details open=""><summary>面向产品供应链（S端）的提供的企业服务：</summary><ul id="00cb9ce7-e5fc-4b36-bfbc-4608ed7d67a6" class="bulleted-list"><li style="list-style-type:disc">数字化服务、新媒体服务、私域营销服务</li></ul><p id="a2a5060f-0e7f-4fa0-8c98-4547160ba172" class="">新媒体内容创作和发布：包括新媒体推文、图文、短视频、直播等内容的策划、创作和发布。</p><p id="088a7a0d-aea5-498f-89bb-8d59ee46db89" class="">新媒体私域运营：包括品牌社交群的建立、管理、维护和营销，以及全面维护网民舆情和形象。</p><p id="0fee620b-d3b2-4afa-bdee-ebeb4b9909ef" class="">新媒体广告投放：包括针对新媒体平台的广告投放策略制定和实施，以及广告效果的分析和优化。</p><p id="5f08bf44-281e-4c70-94cf-8007cd4d1dcc" class="">新媒体用户增长：包括针对品牌目标用户进行新媒体用户拉新和留存，提高品牌知名度、用户转化率和流量。</p><p id="fb89eca0-7b20-463c-b463-43f3a4f5a787" class="">新媒体数据分析：包括新媒体平台数据分析和处理，对品牌粉丝、活动、话题、展示页等各方面数据进行深入挖掘和分析和挖掘市场机会，更好地指导企业的新媒体运营。</p><p id="058dc4f7-51b7-4f6c-be48-ae67eaff3869" class="">通过以上新媒体运营的服务形式，新媒体运营服务公司可以帮助企业提升品牌知名度、提高客户转化率，并且不断监测分析数据，优化运营策略，帮助企业更好地在新媒体平台上推广并推广商品、服务及品牌。</p></details></li></ul><ul id="89d6274c-4baf-4414-9836-2d80225a2219" class="toggle"><li><details open=""><summary>面向社群帮卖端（B端）提供源头厂家供应链、“老板资源”及“群划算”机器人</summary><p id="7699b999-1d39-4060-b2cc-127a6270066e" class="">
+</p></details></li></ul><ul id="c0a1b4ba-e7f0-47bd-8583-50fe59c4d938" class="toggle"><li><details open=""><summary>面向消费者（C端）的提供可溯源、品牌方的有品控保障的团购电商产品</summary></details></li></ul></details></li></ul><ul id="a5ac1f94-60d6-4d90-ae48-61e43438cc33" class="toggle"><li><details open=""><summary>品牌定位</summary><p id="619f1fb1-752a-4aae-bd41-0494eff5fa8d" class="">抱成团的品牌定位：</p><p id="1d33286f-6075-4458-bbcf-b1b0ccdb393f" class="">“源头甄选，构建美好社群生活”</p></details></li></ul><h2 id="75420613-948d-46ed-9833-5dfa13eba2d9" class="">三、市场分析</h2><ul id="5dcf734e-9bb5-4c44-943e-09be9cf13fdd" class="toggle"><li><details open=""><summary>目标市场的描述</summary><p id="26fe6d02-42a3-40e8-9080-e3421e754225" class="">抱成团的目标市场是广大的线上消费者，主要覆盖全国各地。我们注重建立社群网络，利用社交媒体的力量，满足消费者对高品质商品和服务的需求，同时为品牌方和源头厂家提供销售渠道和品牌宣传。我们的目标客户包括喜欢在线购物的年轻人群体、注重品质和性价比的消费者、以及在社交媒体上活跃的用户。同时，我们也为商家提供了一个快速高效的销售渠道，帮助他们降低运营成本、提高效率和拓展市场。</p><p id="1e0a6dd8-3d2a-4585-b124-badbdcb15dc4" class="">随着消费者对高品质商品和服务的需求不断提高，社交电商将会成为未来的主流购物方式之一。同时，随着互联网技术和社交媒体的普及，社交电商市场增长的势头也越来越迅猛。抱成团致力于打造一个以社群为基础的电商平台，覆盖全国各地的消费者群体，拥有巨大的市场潜力和发展空间。</p></details></li></ul><ul id="2222ab71-6a72-4708-beec-86c51e5e20a2" class="toggle"><li><details open=""><summary>目标市场的规模和竞争分析</summary><ul id="22c17b2c-60fd-4c88-bf4e-ab1011dc8fe7" class="toggle"><li><details open=""><summary>市场规模</summary><p id="feaf43f0-2f62-4c0e-91d3-434251658f50" class="">随着互联网技术的不断进步和消费者消费习惯的转变，社交电商成为了近年来最受关注的行业之一。根据艾瑞咨询的数据显示，2020年中国社交电商市场规模达到1.8万亿元，同比增长87.5%。预计到2025年，社交电商市场规模将达到5.6万亿元，年复合增长率为25%。在社交电商市场中，拼团模式占据了很大一部分市场份额，其中以拼多多为代表的拼团电商平台已成为社交电商市场的领头羊。</p></details></li></ul><ul id="72816d6d-d9ca-4043-afcd-415a5fd88d73" class="toggle"><li><details open=""><summary>竞争对手分析</summary><p id="cfd4f707-8e73-4204-b42e-576017ee8b5d" class="">目前，国内社群电商市场上存在众多竞争对手，其中以拼多多、有赞、京东、小红书、快团团等为代表。以下是抱成团与主要竞争对手的对比：</p><p id="3201c20b-fb5e-4fa5-bb09-f57b1f67ecf9" class="">（1）拼多多（供应链驱动）</p><p id="fbed1512-585b-42c2-b758-627389610e0e" class="">优势：以“拼团”模式为主要卖点，价格低廉，流量巨大。</p><p id="184b009c-4c60-4826-a580-e8c6da11e5dc" class="">劣势：商家利润低退货高并支持仅退款，品质参差不齐，用户口碑差。</p><p id="347f82fd-8fea-4689-a1dd-7e593b73f9f7" class="">（2）有赞（技术驱动）</p><p id="a2ada14c-c93f-4b0e-aa2f-617ae2690d53" class="">优势：技术实力强，系统体验好。</p><p id="f77bbc11-978d-4d91-876a-b9d9730d5163" class="">劣势：商家入驻门槛高，纯商家私域为主，用户群体偏小。</p><p id="70f773b6-b3bc-45c7-84a7-4b316095e366" class="">（3）京东（供应链和物流驱动）</p><p id="aa031cd5-ca7f-450a-b743-36fc1a43cb6e" class="">优势：品牌知名度高，商品质量有保障，物流快，服务体验好。</p><p id="4f47b92d-d8aa-42f5-a0f9-d0fcb370f72d" class="">劣势：价格偏高，营销手段单一，难以满足用户多样化需求。</p><p id="8698ffdf-7adc-4c82-8189-9d8ba5401f52" class="">（4）小红书（内容驱动）</p><p id="1cb21aab-e752-45a1-ac9a-307bb5530067" class="">优势：用户活跃度高，社交媒体属性强，用户粘性强。</p><p id="e108abf2-a918-42ef-8556-a64d97dd5d1b" class="">劣势：主打美妆护肤品类，商品种类相对单一，无法满足用户多样化需求，且目前仍存在一定的流量作假问题。</p><p id="af9c7de7-fbf9-4834-a07a-058af9b467e7" class="">（5）快团团（模式驱动）</p><p id="e99057f2-03b5-4392-ab79-6928cce9d1da" class="">优势：拼团模式创新，流程简单易用，商品价格低廉。</p><p id="f7977869-5283-4a5b-a360-9b9150380604" class="">劣势：用户口碑较差，品质参差不齐，服务无保障。</p><p id="1c941100-6bcf-4a91-a562-8c110b1d016f" class="">抱成团相对于竞争对手的优势主要在于其垂直聚焦的策略，同时结合了技术及运营等多个方面的驱动。抱成团的优势可以总结为以下几点：</p><p id="bf52bc52-f849-4e05-8614-8a8dcd50a851" class="">社交属性强：抱成团将社交元素融入到购物体验中，提高了用户的粘性和参与度。这种社交属性可以让用户在购物的过程中获得更好的体验，并且通过社交分享等方式吸引更多的用户参与。</p><p id="df26be2a-1ad8-45c2-b6b1-a92d1d3a99fe" class="">商品质量有保障：抱成团严格筛选供应商，确保商品质量和售后服务。这种策略可以让用户在购买商品的过程中更加放心，提高购物的满意度，同时也可以提高用户的回购率和口碑。</p><p id="90fbe165-1bdb-48a1-b696-a298571c266b" class="">源头供应链，价格优惠：抱成团采用团购模式，可以获得更低的价格，吸引更多用户参与。抱成团选择从源头合作商家，直接与供应商进行合作，使得产品的价格更优惠，同时也可以减少中间环节，提高了效率。</p><p id="0b8d1cb8-ba35-4979-87c2-136fde96cc4d" class="">私域运营体系：抱成团为创始人打造私域运营体系，对外提供社交属性。这种策略可以帮助抱成团建立自己的用户群体，并且通过私域运营的方式增加用户黏性和参与度，提高用户的回购率和口碑。</p><p id="608b239b-30ed-4f3b-9661-493a966c0e2f" class="">综合来看，抱成团的优势主要在于垂直聚焦，结合了技术及运营等多个方面的驱动，并且采用了社交属性强、商品质量有保障、源头供应链、价格优惠、私域运营体系等多种策略。这些策略能够让抱成团在激烈的竞争中脱颖而出，吸引更多的用户参与，并且提高用户的满意度和口碑。</p></details></li></ul></details></li></ul><ul id="fe905e4d-8b63-45d9-9bc4-89dbbdd6ea5a" class="toggle"><li><details open=""><summary>目标市场的消费者洞察</summary><p id="92037496-0cea-4f0b-b62f-e999ee424c81" class="">根据市场研究，我们发现目标市场的消费者越来越重视产品的品质和性价比，同时也希望能够通过社交媒体了解产品和品牌的信息。他们更愿意信任和购买来自品牌方或源头厂家的产品，而不是中间商或代理商。此外，团购和社交化购物也成为他们购物的主要方式之一。在这个趋势下，抱成团通过提供高品质、高性价比的产品，以及基于社群的营销模式，能够满足目标市场消费者的需求，并且拥有巨大的市场机会。</p></details></li></ul><h2 id="d1493b6d-2991-443a-adc1-15d66f129bf7" class="">四、营销策略</h2><ul id="19a2453a-d2bf-4034-a684-6234bc863152" class="toggle"><li><details open=""><summary>市场营销策略</summary><p id="94ba4895-cabf-4ede-9295-5723ba8bc721" class="">抱成团的市场营销策略主要是基于社交媒体的推广和传播，通过社交媒体平台与用户进行互动、交流和分享，吸引更多的用户加入到抱成团的社群网络中，并促进平台的快速增长。</p><p id="92158e60-3d12-4e58-aead-8893556ca5f7" class="">具体来说，抱成团的市场营销策略包括以下几个方面：</p><p id="0f2c4c67-f56a-4fec-8c81-1979b1af3a88" class="">社交媒体推广：利用社交媒体平台，如微信、抖音、小红书等，开展品牌宣传和推广活动，吸引用户关注和参与抱成团的活动，提高品牌知名度和用户粘性。</p><p id="2b6e5e0b-3d26-4ec2-ab4a-58f6e01fafbc" class="">用户裂变传播：通过用户间的口碑传播和裂变效应，快速扩大用户规模，增加平台的曝光度和流量，同时提高用户参与度和转化率。</p><p id="a237628b-2b11-454b-8962-df84ba25bd3e" class="">优惠活动促销：定期开展各种促销活动，如打折、限时抢购等，吸引用户下单购买，同时增加用户对平台的信任和忠诚度。</p><p id="4f53a1b6-ba03-42c0-8706-8d38f7c49da1" class="">内容营销：通过推出优质的内容营销，如产品介绍、使用心得、品牌故事等，提高用户对产品和品牌的认知和信任度，增加用户转化率和复购率。</p><p id="9b685a2d-dff8-4d07-9850-d5d2e77ee5db" class="">综上所述，抱成团的市场营销策略主要是基于社交媒体的推广和传播，通过不断优化用户体验和增加用户价值，促进平台的快速发展和用户规模的扩大。</p></details></li></ul><ul id="ebef3090-6638-4f50-b520-0e43269b9890" class="toggle"><li><details open=""><summary>促销和广告策略</summary><p id="7c954277-deed-4a88-9f92-7afea804cc55" class="">抱成团的促销和广告策略主要包括以下几点：</p><p id="f8db02a7-5854-4246-8630-55aa5602ee96" class="">社交媒体营销：抱成团通过社交媒体平台发布商品和活动信息，吸引消费者关注和参与，同时提高品牌知名度和影响力。</p><p id="c7edd671-31f7-4323-ab95-901cf0dbdb07" class="">团购优惠：抱成团的团购优惠活动是吸引消费者的关键。平台会定期推出限时特惠、折扣、买赠等优惠活动，吸引消费者前来购买，并通过多种方式提醒用户参与。</p><p id="22170e54-2853-4aef-9d9a-2d6a12710389" class="">内容营销：抱成团通过内容营销吸引消费者关注和参与，提高用户粘性。平台会定期发布优质内容，如产品使用指南、活动报道、行业资讯等，为用户提供更多价值。</p><p id="2be82c01-1644-40af-a29a-ca9f8661ccad" class="">联合营销：抱成团会与一些知名品牌或商家合作开展联合营销活动，通过品牌的互相促进，提高品牌知名度和影响力。</p><p id="ae0d87a3-9d40-4f56-b73d-4344f3b3159c" class="">促销推广：抱成团会通过多种方式宣传促销活动，如短信、邮件、APP推送等，吸引用户参与，提高平台销售额。</p><p id="af5574ee-19ec-4e7d-8b61-feefe8b62df8" class="">通过以上多种促销和广告策略，抱成团能够有效吸引消费者，提高平台知名度和销售额。</p></details></li></ul><h2 id="3da35bf0-e4e7-47fb-a86a-1e1ffa042832" class="">五、商业模式</h2><ul id="71ad276a-064a-428a-a7ca-c27cf800a431" class="toggle"><li><details open=""><summary>商业模式的描述</summary><p id="96e84d63-fc8a-4e8a-858b-c81b601f6db2" class="">抱成团的商业模式基于团购电商的S2B2C模式，主要面向消费者提供有品控保障的产品，同时也面向产品供应链端和社群帮卖端提供企业服务和资源支持。</p><p id="8bc716a4-0684-40c2-ac1c-c143eb903d51" class="">在面向产品供应链的企业服务方面，抱成团提供数字化服务、新媒体服务和私域营销服务，帮助供应商实现数字化转型和提高市场曝光度。同时，抱成团也提供可追溯源头厂家供应链和老板资源给社群帮卖端，帮助他们获得更好的供应和资源支持。</p><p id="9b0fd423-e5be-49c9-b192-bb80f1dbe047" class="">在面向消费者的团购电商产品方面，抱成团提供有品控保障的产品，满足消费者对商品品质和服务的需求。</p><p id="1d2edfb5-df01-426b-a7df-b177ba34e4f1" class="">此外，抱成团也提供群划算机器人，帮助社群帮卖端实现更好的销售和服务。</p><p id="a1a58169-d565-4c7f-8fce-228dae34c479" class="">总的来说，抱成团的商业模式是基于团购电商模式的，同时也加入了企业服务和资源支持，旨在为消费者提供更好的产品和服务，为供应商和社群帮卖端提供更好的营销和资源支持。</p></details></li></ul><ul id="7bf50baa-02a7-46aa-8531-d7d5b239bb82" class="toggle"><li><details open=""><summary>商业模式的优势和劣势</summary><p id="7a1de362-c18e-4502-98b0-d4ff3140acf7" class="">抱成团的商业模式结合了团购电商和企业服务，具有以下优势：</p><p id="3107c075-e5cc-4d1b-8da5-8aa3d51d9b6c" class="">优势：</p><p id="c17a01cd-da91-4cb3-ae15-23e0a0a0974d" class="">有品控保障：抱成团提供可溯源、品牌方的有品控保障的团购电商产品，能够满足消费者对商品品质和服务的需求，提高消费者的购买信任度。</p><p id="7354ecd4-aec0-46ad-ad15-08beaa0bd08d" class="">强大的企业服务：抱成团提供数字化服务、新媒体服务和私域营销服务，帮助供应商实现数字化转型和提高市场曝光度。同时，提供可追溯源头厂家供应链和老板资源给社群帮卖端，帮助他们获得更好的供应和资源支持。</p><p id="bb9d4809-fcb4-4f9c-a9e0-963e05d15c49" class="">社群帮卖机器人：抱成团提供群划算机器人，帮助社群帮卖端实现更好的销售和服务，提高销售效率和用户体验。</p><p id="63159b94-3551-4aa3-9338-fde7a3f46bc1" class="">多方合作：抱成团的商业模式能够让供应商、社群帮卖端和消费者之间形成有效的合作关系，实现多方共赢。</p><p id="44725b44-f090-474b-8f7f-c552e485ea4c" class="">然而，这个商业模式也存在以下劣势：</p><p id="64df2c67-a5e5-41c8-8043-c7cc24f74bd4" class="">劣势：</p><p id="f9964f8f-7655-4c7e-8976-badac14e26c7" class="">竞争激烈：团购电商行业竞争激烈，抱成团需要不断提高自己的服务质量和市场竞争力。</p><p id="5a7aa58c-c0a6-4d7d-8ac8-adf9b33fe5a3" class="">需要大量的资源投入：抱成团需要大量的人力、物力、财力等资源投入来提高自己的品牌知名度和市场份额。</p><p id="f25b3f9f-89be-4ec9-837b-cf1f2de361fb" class="">风险：由于抱成团的业务涉及多个角色和环节，需要面对多种风险，如供应链风险、售后服务风险、品牌声誉风险等。需要采取相应的措施来降低风险。</p></details></li></ul><ul id="0da03c02-bb6b-4658-ba24-f2aea21d98da" class="toggle"><li><details open=""><summary>商业模式的可持续性和发展前景</summary><p id="c3c6df4f-8524-49bb-a19e-8e59749b692e" class="">抱成团的商业模式基于团购电商模式，并融入了企业服务和资源支持，拥有一定的可持续性和发展前景。</p><p id="8608b38f-5416-4f29-86f8-4e17fea276dd" class="">从可持续性方面来看，抱成团通过建立S2B2C模式，实现了供应链、平台和消费者的共赢。在S端，抱成团通过数字化服务、新媒体服务和私域营销服务等，帮助供应商实现数字化转型和提高市场曝光度，从而提高了供应链的效率和利润。在B端，抱成团提供源头厂家供应链和老板资源支持，还有聚划算机器人，帮助社群帮卖端提高销售和服务水平。在C端，抱成团提供有品控保障的团购电商产品，满足消费者对商品品质和服务的需求。通过这种方式，抱成团建立了稳定的生态系统，实现了持续发展和壮大。</p><p id="d51d9266-c9ce-44f8-bf3a-2c0f6516f3ea" class="">从发展前景方面来看，随着消费者对商品品质和服务的要求越来越高，团购电商的市场需求将持续增长。同时，随着供应链数字化转型的加速，抱成团提供的数字化服务和企业服务也将得到更广泛的应用和推广。此外，抱成团在社群帮卖方面的优势也将进一步扩大，进一步提高销售和服务水平。综上，抱成团的商业模式具有良好的可持续性和发展前景。</p></details></li></ul><h2 id="5cb309d8-8839-4302-a310-e8ee5b186b87" class="">六、融资计划</h2><ul id="77deb1db-5449-4a74-b620-2416b8ddabf0" class="toggle"><li><details open=""><summary>融资的目的和用途</summary><p id="4acbcb26-7116-4a80-ac72-e029ae401f13" class="">目的： 天使轮融资的主要目的是为抱成团提供资金支持，帮助其进一步推进业务拓展和产品创新，并提升市场份额。同时，融资也将用于优化公司内部的组织架构，吸引更多优秀的人才加入团队，进一步提升公司的整体实力和竞争力。</p><p id="fbe19f5c-2172-4bdd-8b6f-79cbfe6e55a3" class="">用途： 融资资金将主要用于以下方面：</p><p id="ee4f0cf8-a4f3-4e4b-badb-d2daca4b4f74" class="">开发和完善团购电商平台的技术和产品，提高平台的用户体验和功能性。</p><p id="0459c3a8-a5e6-4458-9d83-b56eb5d84a08" class="">进行市场营销和推广，扩大品牌知名度和市场占有率。</p><p id="370911ae-d93b-406f-9c76-d4878748bffe" class="">拓展企业服务和资源支持，提高供应商和社群帮卖端的服务水平。</p><p id="f3ec03a8-6438-4c3f-9c05-3a19219d61f3" class="">强化组织架构和人才引进，提高公司的整体实力和竞争力。</p></details></li></ul><ul id="7882c394-0b18-41c4-91c2-232936c5b5ec" class="toggle"><li><details open=""><summary>融资的方式和金额</summary><p id="744eb067-7be3-4d96-a23d-65a348fdf521" class="">方式： 天使轮融资将通过股权融资的方式进行。具体来说，抱成团将发行一定比例的股份，用以吸引天使投资人的注资。同时，投资人将成为公司的股东之一，享有相应的股权收益和权益。</p><p id="03bc34da-dc2a-4633-9dc9-0a98554c4134" class="">金额： 抱成团天使轮融资的金额预计为500万元人民币。具体融资金额将根据市场反应和融资需求进行调整。</p></details></li></ul><ul id="cc62debd-154f-4bf3-9f02-15830f177af4" class="toggle"><li><details open=""><summary>投资回报和退出策略</summary><p id="91603237-ceb9-48a5-85cb-542542a2bcfe" class="">投资回报： 抱成团的天使投资人将获得相应的股权收益和权益。随着公司业务的发展和增长，股权价值也将随之增加，投资人将获得相应的资本回报。</p><p id="1fd7d687-a21d-4244-b8c0-f0b217d161aa" class="">退出策略： 在公司达到一定的业务规模和市场地位之后，抱成团将考虑进行上市或者出售股权等退出策略，以实现投资人的资本回报和退出。同时，抱成团也将持续关注市场变化和行业趋势，及时调整和优化退出策略，以确保投资人的资本回报和公司的发展。</p></details></li></ul></div></article></body></html>
